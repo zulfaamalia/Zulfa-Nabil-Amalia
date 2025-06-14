@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML DIV</title>
+  <style>
+    .konten {
+      float: left;
+      width: 33.33%;
+      height: 200px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .konten1 { background-color: lightblue; }
+    .konten2 { background-color: lightpink; }
+    .konten3 { background-color: lightgreen; }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="clearfix">
+    <div class="konten konten1">Content 1</div>
+    <div class="konten konten2">Content 2</div>
+    <div class="konten konten3">Content 3</div>
+  </div>
+</body>
+</html>

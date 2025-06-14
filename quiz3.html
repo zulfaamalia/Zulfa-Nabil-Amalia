@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toko Buku Online</title>
+  <style>
+    #header {
+      background-color: sienna;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    #header img {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 10px;
+    }
+
+    #menu {
+      background-color: Tan;
+      padding: 15px;
+      width: 20%;
+      float: left;
+      height: 400px;
+      box-sizing: border-box;
+    }
+
+    #content {
+      background-color: white;
+      padding: 15px;
+      width: 75%;
+      float: left;
+      height: 400px;
+      box-sizing: border-box;
+    }
+
+    .book {
+      background-color: peru;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 10px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <img src="Logo.JPEG">
+    <h1>Selamat Datang di Toko Buku Online Aksara</h1>
+  </div>
+
+  <div class="clearfix">
+    <div id="menu">
+      <h3>Menu</h3>
+      <a href="Quiz5.html">BUKU</a>
+      <a href="Quiz6.html">MAJALAH</a>
+      <a href="Quiz7.html">KORAN</a>
+
+      <h3>Kategori</h3>
+      <ul>
+        <li>Fiksi</li>
+        <li>Non-Fiksi</li>
+        <li>Novel</li>
+        <li>Self Improvement</li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h2>Best Seller</h2>
+      <div class="book">
+        <h3>Pasien</h3>
+        <p>Penulis: Naomi Midori</p>
+      </div>
+      <div class="book">
+        <h3>Home Sweet Loan</h3>
+        <p>Penulis: Almira Bastari</p>
+      </div>
+      <div class="book">
+        <h3>Soekarno Sang Guru Bangsa</h3>
+        <p>Penulis: Anom Whani Wicaksane</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

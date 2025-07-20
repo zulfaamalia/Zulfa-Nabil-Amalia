@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Majalah - Aksara Toko Buku</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">AKSARA</div>
+    
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+    <main class="main-content">
+      <header>
+        <h1>Majalah Umum</h1>
+        <p>Koleksi untuk kamu para pecinta Majalah.</p>
+      </header>
+
+      <!-- MAJALAH HIBURAN -->
+      <section class="book-grid">
+        <h2>Majalah Hiburan</h2>
+        <div class="grid">
+          <a href="latihan49.html" class="book-item">
+            <img src="majalah1.jpg" alt="Gadis">
+            <p><strong>Gadis</strong><br>oleh Gadis</p>
+          </a>
+          <a href="latihan50.html" class="book-item">
+            <img src="majalah2.jpg" alt="Hai">
+            <p><strong>Hai</strong><br>oleh Hai</p>
+          </a>
+          <a href="latihan51.html" class="book-item">
+            <img src="majalah3.jpg" alt="Cosmopolitan Indonesia">
+            <p><strong>Cosmopolitan Indonesia</strong><br>oleh Cosmopolitan Indonesia</p>
+          </a>
+        </div>
+      </section>
+
+      <!--MAJALAH BERITA -->
+      <section class="book-grid">
+        <h2>Majalah Berita</h2>
+        <div class="grid">
+          <a href="latihan52.html" class="book-item">
+            <img src="majalah4.jpg" alt="Tempo">
+            <p><strong>Tempo</strong><br>oleh Tempo</p>
+          </a>
+          <a href="latihan53.html" class="book-item">
+            <img src="majalah5.jpg" alt="Gatra">
+            <p><strong>Gatra</strong><br>oleh Gatra</p>
+			
+          </a>
+          <a href="latihan54.html" class="book-item">
+            <img src="majalah6.jpg" alt="Intisari">
+            <p><strong>Intisari</strong><br>oleh Intisaris</p>
+         </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script Dropdown -->
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

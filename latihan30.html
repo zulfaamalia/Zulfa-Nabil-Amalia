@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koran- Aksara Toko Buku</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">AKSARA</div>
+    
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+    <main class="main-content">
+      <header>
+        <h1>Koran Mingguan</h1>
+        <p>Koleksi untuk kamu para pecinta Koran.</p>
+      </header>
+
+      <!-- KORAN MINGGUAN -->
+      <section class="book-grid">
+        <h2>Koran Mingguan</h2>
+        <div class="grid">
+          <a href="novel1.html" class="book-item">
+            <img src="mingguan1.png" alt="Tempo (Edisi Mingguan)">
+            <p><strong>Tempo (Edisi Mingguan)</strong><br>oleh Tempo (Edisi Mingguan)</p>
+          </a>
+          <a href="novel2.html" class="book-item">
+            <img src="mingguan2.png" alt="Gatra">
+            <p><strong>Gatra</strong><br>oleh Gatra</p>
+          </a>
+          <a href="novel3.html" class="book-item">
+            <img src="mingguan3.jpg" alt="Tabloid Bola">
+            <p><strong>Tabloid Bola</strong><br>oleh Tabloid Bola</p>
+          </a>
+        
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script Dropdown -->
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

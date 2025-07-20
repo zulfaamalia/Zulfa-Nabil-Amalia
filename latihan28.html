@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Majalah - Aksara Toko Buku</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">AKSARA</div>
+    
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+    <main class="main-content">
+      <header>
+        <h1>Majalah Khusus</h1>
+        <p>Koleksi untuk kamu para pecinta Majalah.</p>
+      </header>
+
+      <!-- MAJALAH HIBURAN -->
+      <section class="book-grid">
+        <h2>Majalah Pendidikan</h2>
+        <div class="grid">
+          <a href="latihan55.html" class="book-item">
+            <img src="foto1.jpg" alt="Majalah Suara Guru">
+            <p><strong>Majalah Suara Guru</strong><br>oleh Majalah Suara Guru</p>
+          </a>
+          <a href="latihan56.html" class="book-item">
+            <img src="foto3.jpg" alt="Cakrawala Pendidikan">
+            <p><strong>Cakrawala Pendidikan</strong><br>oleh Cakrawala Pendidikan</p>
+          </a>
+        </div>
+      </section>
+
+      <!--MAJALAH KESEHATAN -->
+      <section class="book-grid">
+        <h2>Majalah Kesehatan</h2>
+        <div class="grid">
+          <a href="latihan57.html" class="book-item">
+            <img src="foto4.jpg" alt="Majalah Kesehahatan">
+            <p><strong>Majalah Kesehahatan</strong><br>oleh Majalah Kesehahatan</p>
+          </a>
+          <a href="latihan58.html" class="book-item">
+            <img src="foto5.jpg" alt="Info Sehat">
+            <p><strong>Info Sehat</strong><br>oleh Info Sehat</p>
+			
+          </a>
+          <a href="latihan59.html" class="book-item">
+            <img src="foto6.jpg" alt="Healthy Life">
+            <p><strong>Healthy Life</strong><br>oleh Healthy Life</p>
+         </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script Dropdown -->
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

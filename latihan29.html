@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koran- Aksara Toko Buku</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">AKSARA</div>
+    
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+    <main class="main-content">
+      <header>
+        <h1>Koran Harian</h1>
+        <p>Koleksi untuk kamu para pecinta Koran.</p>
+      </header>
+
+      <!-- KORAN HARIAN -->
+      <section class="book-grid">
+        <h2>Koran Harian</h2>
+        <div class="grid">
+          <a href="latihan60.html" class="book-item">
+            <img src="koran1.jpg" alt="Kompas">
+            <p><strong>Kompas</strong><br>oleh Kompas</p>
+          </a>
+          <a href="latihan61.html" class="book-item">
+            <img src="koran2.jpg" alt="Republika">
+            <p><strong>Republika</strong><br>oleh Republika</p>
+          </a>
+          <a href="latihan62.html" class="book-item">
+            <img src="koran3.png" alt="Media Indonesia">
+            <p><strong>Media Indonesia</strong><br>oleh Media Indonesia</p>
+          </a>
+        <a href="latihan63.html" class="book-item">
+            <img src="koran4.jpg" alt="Jawa Pos">
+            <p><strong>Jawa Pos</strong><br>oleh Jawa Pos</p>
+          </a>
+		  <a href="latihan64.html" class="book-item">
+            <img src="koran5.jpg" alt="Harian Pikiran Rakyat">
+            <p><strong>"Harian Pikiran Rakyat</strong><br>oleh "Harian Pikiran Rakyat</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script Dropdown -->
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

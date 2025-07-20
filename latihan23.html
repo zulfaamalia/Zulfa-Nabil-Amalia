@@ -1,110 +1,67 @@
-<html>
-    <head>
-        <title>AKSARA </title>
-        <link rel="stylesheet" href="style5.css"/>
-    </head>
-    <body>
-        <header>
-             <div style="position: absolute; top: 10px; right: 10px; padding:10px;" >
-                <a href="latihan20.html" style="margin-right:25px;">Registrasi</a>
-                <a href="latihan21.html">Login</a>
-            </div>
-            <img src="Logo.jpeg" weight="100px" height="100px"> 
-            <h1>Tempat Nongkrongnya Pencinta Buku</h1>
-            <nav class="navbar">
-           <ul class="menu">
-            <li><a href="#">Home</a></li>
-  <li><a href="#">Buku</a>
-    <ul class="dropdown">
-      <li><a href="#">Fiksi</a>
-        <ul class="dropdown-sub">
-          <li><a href="#">Komik</a></li>
-          <li><a href="#">Cerita Rakyat</a></li>
-          <li><a href="#">Novel</a></li>
-        </ul>
-      </li>
-      <li><a href="#">NonFiksi</a>
-         <ul class="dropdown-sub">
-          <li><a href="#">Buku Kesehatan</a></li>
-          <li><a href="#">Buku Motivasi</a></li>
-          <li><a href="#">Resep Masakan</a></li>
-    </li>
-</ul>
-    </ul>
-  </li>
-   
-  <li>
-    <a href="#">Majalah</a>
-     <ul class="dropdown">
-      <li><a href="#">Umum</a>
-        <ul class="dropdown-sub">
-          <li><a href="#">Majalah Keluarga</a></li>
-          <li><a href="#">Majalah Berita </a></li>
-          <li><a href="#">Majalah Wanita</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Khusus</a>
-         <ul class="dropdown-sub">
-          <li><a href="#">Majalah Olahraga</a></li>
-          <li><a href="#">Majalah Fashion</a></li>
-          <li><a href="#">Majalah Seni dan Desain</a></li>
-    </li>
-</ul>
-    </ul>
-  </li>
-   
-  <li><a href="#">Koran</a>
-  <ul class="dropdown">
-      <li><a href="#">Koran Harian</a>
-        <ul class="dropdown-sub">
-          <li><a href="#">Replubika</a></li>
-          <li><a href="#">Tempo</a></li>
-          <li><a href="#">Kompas</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Koran Mingguan</a>
-         <ul class="dropdown-sub">
-          <li><a href="#">Gatra</a></li>
-          <li><a href="#">Jawa Pos Mingguan</a></li>
-          <li><a href="#">Bintang Indonesia</a></li>
-          
-    </li>
-</ul>
-    </ul>
-  </li> 
-</li>
-</nav>
-        </header>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSARA TOKO BUKU - Masuk</title>
+    <link rel="stylesheet" href="style5.css">
+    <style>
+        .login-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 70vh;
+        }
+        .login-logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .login-container {
+            text-align: center;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "Zulfa Nabil" && password === "zulfa123") {
+                alert("Berhasil masuk!");
+                window.location.href = "latihan24.html";
+            } else {
+                alert("Nama pengguna atau kata sandi salah.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>AKSARA TOKO BUKU</h1>
         
-        <section class="buku-best-seller">
-            <h2>BUKU-BUKU BEST SELLER</h2>
-            <div class="buku">
-                <div class="bukuku">BUKU 1</div>
-                <div class="bukuku">BUKU 2</div>
-                <div class="bukuku">BUKU 3</div>
-                <div class="bukuku">BUKU 4</div>
-                <div class="bukuku">BUKU 5</div>
-            </div>
-        </section>
-        <section class="majalah-best-seller">
-            <h2>MAJALAH BEST SELLER</h2>
-            <div class="majalah">
-                <div class="majalahku">Majalah 1</div>
-                <div class="majalahku">Majalah 2</div>
-                <div class="majalahku">Majalah 3</div>
-                <div class="majalahku">Majalah 4</div>
-                <div class="majalahku">Majalah 5</div>
-            </div>
-        </section>
-        <section class="majalah-best-seller">
-            <h2>KORAN BEST SELLER</h2>
-            <div class="majalah">
-                <div class="majalahku">Koran 1</div>
-                <div class="majalahku">Koran 2</div>
-                <div class="majalahku">Koran 3</div>
-                <div class="majalahku">Koran 4</div>
-                <div class="majalahku">Koran 5</div>
-            </div>
-        </section>
-    </body>
+    </header>
+    
+
+    <div class="login-wrapper">
+        <img src="Logo.png" alt="Logo Toko Buku" class="login-logo">
+        <div class="login-container">
+            <h2>Masuk Pengguna</h2>
+            <input type="text" id="username" placeholder="Nama Pengguna">
+            <input type="password" id="password" placeholder="Kata Sandi">
+            <button onclick="login()">Masuk</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+    </div>
+	
+</body>
 </html>

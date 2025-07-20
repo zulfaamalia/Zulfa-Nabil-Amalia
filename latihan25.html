@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buku Fiksi - Aksara Toko Buku</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">AKSARA</div>
+    
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+    <main class="main-content">
+      <header>
+        <h1>Buku Fiksi</h1>
+        <p>Koleksi novel pilihan terbaik untuk kamu para pecinta cerita fiksi.</p>
+      </header>
+
+      <!-- NOVEL FANTASI -->
+      <section class="book-grid">
+        <h2>Novel Fantasi</h2>
+        <div class="grid">
+          <a href="latihan31.html" class="book-item">
+            <img src="novel1.jpg" alt="Harry Potter">
+            <p><strong>Harry Potter</strong><br>oleh J.K.Rowling</p>
+          </a>
+          <a href="latihan32.html" class="book-item">
+            <img src="novel2.jpg" alt="Eragon">
+            <p><strong>Eragon</strong><br>oleh Christopher Paolini</p>
+          </a>
+          <a href="latihan33.html" class="book-item">
+            <img src="novel3.jpg" alt="Percy Jackson & the Olympians">
+            <p><strong>Percy Jackson & the Olympians</strong><br>oleh Rick Riordan</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- NOVEL ROMANTIS -->
+      <section class="book-grid">
+        <h2>Novel Romantis</h2>
+        <div class="grid">
+          <a href="latihan34.html" class="book-item">
+            <img src="novel4.jpg" alt="Dilan 1990">
+            <p><strong>Dilan 1990</strong><br>oleh Pidi Baiq</p>
+          </a>
+          <a href="latihan35.html" class="book-item">
+            <img src="novel5.jpg" alt="Dear Nathan">
+            <p><strong>Dear Nathan</strong><br>oleh Erisca Febriani</p>
+          </a>
+          <a href="latihan36.html" class="book-item">
+            <img src="novel6.jpg" alt="Ayat-Ayat Cinta">
+            <p><strong>Ayat-Ayat Cinta</strong><br>oleh Habiburrahman El Shirazy</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- NOVEL PETUALANGAN -->
+      <section class="book-grid">
+        <h2>Novel Petualanagn</h2>
+        <div class="grid">
+          <a href="latihan37.html" class="book-item">
+            <img src="novel7.jpg" alt="Laskar Pelangi">
+            <p><strong>Laskar Pelangi</strong><br>oleh Andrea Hiratama</p>
+          </a>
+          <a href="latihan38.html" class="book-item">
+            <img src="novel8.jpg" alt="5 Cm">
+            <p><strong>5 Cm</strong><br>oleh Donny Dhirgantoro</p>
+          </a>
+          <a href="latihan39.html" class="book-item">
+            <img src="novel9.jpg" alt="Negeri 5 Menara">
+            <p><strong>Negeri 5 Menara</strong><br>oleh Ahmad Fuadi</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script Dropdown -->
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

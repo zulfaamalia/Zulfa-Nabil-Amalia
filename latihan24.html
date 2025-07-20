@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - AKSARA TOKO BUKU</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="latihan24.html">Home</a></li>
+		
+               
+				<ul class="menu">
+    
+
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Buku</a>
+        <ul class="submenu">
+            <li><a href="latihan25.html">Fiksi</a></li>
+            <li><a href="latihan26.html">Nonfiksi</a></li>
+        </ul>
+    </li>
+<li class="dropdown">
+        <a href="#" class="dropdown-toggle">Majalah</a>
+        <ul class="submenu">
+            <li><a href="latihan27.html">Umum</a></li>
+            <li><a href="latihan28.html">Khusus</a></li>
+        </ul>
+    </li>
+	<li class="dropdown">
+        <a href="#" class="dropdown-toggle">Koran</a>
+        <ul class="submenu">
+            <li><a href="latihan29.html">Harian</a></li>
+            <li><a href="latihan30.html">Mingguan</a></li>
+        </ul>
+    </li>
+
+
+                
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>AKSARA TOKO BUKU</h1>
+                <p>Selamat datang di toko buku digital kami!</p>
+            </header>
+
+            <section class="book-grid">
+                <h2>Buku Best Seller</h2>
+                <div class="grid">
+                    <div class="book-item">
+                        <img src="gambar1.jpg" alt="Buku 1">
+                        <p>Laskar Pelangi-Andrea Hirata</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar2.jpg" alt="Buku 2">
+                        <p>Perahu Kertas-Dee Lestari</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar3.jpg" alt="Buku 3">
+                        <p>Ronggeng Dukuh Paruk-Ahmad Tohari</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar4.jpg" alt="Buku 4">
+                        <p>Laut Bercerita-Leila S. Chudori</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar5.jpg" alt="Buku 5">
+                        <p>Bumi-Tere Liye</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar6.jpg" alt="Buku 6">
+                        <p>Negeri 5 Menara-Amad Fuadi</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar7.png" alt="Buku 7">
+                        <p>Berani Tidak Disukai-Ichiro Kishimi & Fumitake Koga</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar8.jpg" alt="Buku 8">
+                        <p>Haibie & Ainun-B.J. Habibie</p>
+                    </div>
+                    <div class="book-item">
+                        <img src="gambar9.jpg" alt="Buku 9">
+                        <p>Sepatu Dahlan-Khrisna Pabichara</p>
+                    </div>
+					<div class="book-item">
+                        <img src="gambar10.png" alt="Buku 9">
+                        <p>Filosofi Teras- Henry Manampiring</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+	<script>
+        document.querySelectorAll('.dropdown-toggle').forEach(function(menuLink) {
+            menuLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const parentLi = this.parentElement;
+                parentLi.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

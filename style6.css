@@ -1,0 +1,157 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e3f2fd; /* Latar biru muda */
+    color: #000;
+}
+
+/* KONTAINER UTAMA */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 220px;
+    background-color: #0d47a1; /* Biru tua */
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 18px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 14px;
+    display: block;
+    border-radius: 6px;
+    background-color: #1976d2; /* Biru sedang */
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #bbdefb; /* Hover biru muda */
+    color: #0d47a1;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+/* HEADER ATAS (AKSARA) */
+.main-content header {
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content header h1 {
+    color: #0d47a1;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-content header p {
+    color: #1976d2;
+    font-size: 16px;
+}
+
+/* JUDUL BUKU */
+.book-grid h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #0d47a1;
+}
+
+/* ===== GRID BUKU ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* ITEM BUKU */
+.book-item {
+    background-color: #ffffff;
+    border: 2px solid #e3f2fd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.book-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.book-item p {
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+/* ===== DROPDOWN SUBMENU ===== */
+.submenu {
+    display: none;
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.dropdown.active .submenu {
+    display: block;
+}
+
+.submenu li a {
+    background-color: #bbdefb;
+    color: #0d47a1 !important;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+/* Hapus efek shadow default */
+h1, h2, h3, p, a, li {
+    text-shadow: none !important;
+}

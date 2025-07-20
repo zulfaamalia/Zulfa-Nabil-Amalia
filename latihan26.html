@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buku Non Fiksi - Aksara Toko Buku</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">AKSARA</div>
+    
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+    <main class="main-content">
+      <header>
+        <h1>Buku Non Fiksi</h1>
+        <p>Koleksi untuk kamu para pecinta buku Non Fiksi.</p>
+      </header>
+
+      <!-- BIOGRAFI -->
+      <section class="book-grid">
+        <h2>Biografi</h2>
+        <div class="grid">
+          <a href="latihan40.html" class="book-item">
+            <img src="bio1.jpg" alt="Habibie & Ainun">
+            <p><strong>Habibie & Ainun</strong><br>oleh B.J.Habibie</p>
+          </a>
+          <a href="latihan41.html" class="book-item">
+            <img src="bio2.jpg" alt="Soekarno: Biografi Sang Proklamator">
+            <p><strong>Soekarno: Biografi Sang Proklamator</strong><br>oleh Roso Daras</p>
+          </a>
+          <a href="latihan42.html" class="book-item">
+            <img src="bio3.jpg" alt="Lupus: My Story">
+            <p><strong>Lupus: My Story</strong><br>oleh Astrid Prasetyo</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- MOTIVASI -->
+      <section class="book-grid">
+        <h2>Motivasi</h2>
+        <div class="grid">
+          <a href="latihan43.html" class="book-item">
+            <img src="bio4.jpg" alt="7 Habits of Highly Effective People">
+            <p><strong>7 Habits of Highly Effective People</strong><br>oleh Stephen R. Covey</p>
+          </a>
+          <a href="latihan44.html" class="book-item">
+            <img src="bio5.jpg" alt="Rich Dad Poor Dad">
+            <p><strong>Rich Dad Poor Dad</strong><br>oleh Robert T. Kiyosaki</p>
+          </a>
+          <a href="latihan45.html" class="book-item">
+            <img src="bio6.jpg" alt="Mudahnya Hidup Bahagia">
+            <p><strong>Mudahnya Hidup Bahagia</strong><br>oleh Ary Ginanjar Agustian</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- PENGETAHUAN -->
+      <section class="book-grid">
+        <h2>Pengetauan</h2>
+        <div class="grid">
+          <a href="latihan46.html" class="book-item">
+            <img src="bio7.jpg" alt="Ensiklopedia Ilmu Pengetahuan Umum">
+            <p><strong>Ensiklopedia Ilmu Pengetahuan Umum</strong><br>oleh National Geographic</p>
+          </a>
+          <a href="latihan47.html" class="book-item">
+            <img src="bio8.jpg" alt="Filsafat Ilmu">
+            <p><strong>Filsafat Ilmu</strong><br>oleh Jujun S. Suriasumantri</p>
+          </a>
+          <a href="latihan48.html" class="book-item">
+            <img src="bio9.jpg" alt="Sejarah Dunia Yang Disembunyikan">
+            <p><strong>Sejarah Dunia Yang Disembunyikan</strong><br>oleh Jonathan Black</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script Dropdown -->
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

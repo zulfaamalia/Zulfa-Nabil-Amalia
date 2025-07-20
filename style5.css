@@ -1,101 +1,62 @@
-.navbar {
-    background: brown;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 30px;
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
-
-.menu > li {
-  position: relative;
-}
-
-.menu a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
-}
-
-.menu li:hover > a {
-  background-color: tan;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-.menu li:hover > .dropdown {
-  display: block;
-}
-
-.dropdown-sub {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-.dropdown li:hover > .dropdown-sub {
-  display: block;
-}
-
-.menu {
-    margin: 0;
-    display: flex;
-    list-style-type: none;
     padding: 0;
 }
-.menu li {
-    padding-left: 0;
-    margin-right: 10px;
-}
-.menu li a {
-    padding: 10px;
-    color:rgb(64, 64, 186);
-    text-decoration: none;
-    display: inline-block;
-}
-.buku-best-seller, .majalah-best-seller {
-    margin: 50px;
-    padding: 50px;
-    background-color: brown;
-    border-radius: 10px;
-}
-.buku, .majalah{
-    display: flex;
-    justify-content: space-around;
-}
-.bukuku, .majalahku {
-    padding: 50px;
-    border: 1px solid rgb(99, 99, 231);
-    border-radius: 5px;
-    background-color: tan;
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    width: 100px;
+}
+nav {
+    background-color: #34495e;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    padding: 20px;
+}
+.login-container {
+    background: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
